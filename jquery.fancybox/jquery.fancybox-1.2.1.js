@@ -520,7 +520,7 @@
 	};
 
 	$.fn.fancybox.defaults = {
-		padding				:	10,
+		padding				:	0,
 		imageScale			:	true,
 		zoomOpacity			:	false,
 		zoomSpeedIn			:	0,
