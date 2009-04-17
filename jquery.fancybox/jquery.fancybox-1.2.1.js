@@ -514,7 +514,7 @@
 
 		if (isIE) {
 			$("#fancy_inner").prepend('<iframe class="fancy_bigIframe" scrolling="no" frameborder="0"></iframe>');
-			$("#fancy_close, .fancy_bg, .fancy_title, .fancy_ico").fixPNG();
+			// $("#fancy_close, .fancy_bg, .fancy_title, .fancy_ico").fixPNG();
 		}
 	};
 
