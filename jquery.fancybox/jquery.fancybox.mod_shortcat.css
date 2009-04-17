@@ -1,0 +1,149 @@
+
+div#fancy_overlay {
+	position:absolute;
+	top: 0;
+	left: 0;
+	z-index: 30;
+	width: 100%;
+	background-color: #333;
+}
+
+/* Co to dela v ie? */
+* html div#fancy_overlay {
+	position: absolute;
+  height: auto;
+	xxxheight: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+
+/* === Loading box === */
+
+div#fancy_loading {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+	display: none;
+	overflow: hidden;
+	background: transparent;
+	z-index: 598;
+}
+
+div#fancy_loading div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	background: transparent url('fancy_progress.png') no-repeat;
+}
+
+/* === Closing cross === */
+
+div#fancy_close {
+	background: url('fancy_mod_shortcat_closebox.png') top left no-repeat;
+  cursor: pointer;
+  display: none;
+  height: 37px;
+  position: fixed;
+  right: 22px;
+  top: 24px;
+  width: 37px;
+  z-index: 599;
+}
+
+div#fancy_close:hover {
+	background-position: bottom left;
+}
+
+/* === Image title === */
+
+div#fancy_title {
+	position: fixed;
+	top: 24px;
+	left: 22px;
+	width: auto;
+	z-index: 599;
+	display: none;
+	font-size: .9em;
+	max-width: 400px;
+	height: 1.3em;
+}
+
+div#fancy_title table {
+	margin: 0 auto;
+}
+
+div#fancy_title div {
+	color: #333;
+	font-weight: normal;	
+	font-size: 11px;
+	padding: 0;
+}
+
+td#fancy_title_left {
+	display: none;
+}
+
+div#fancy_title td#fancy_title_main {
+	background: #fff;
+	padding: 5px 5px 4px 5px;
+	width: auto; 
+	height: auto;
+	font-family: Arial, sans-serif;
+}
+
+td#fancy_title_right {
+	display: none;
+}
+
+/* === Image has no backgroud and shadows === */
+
+div#fancy_bg {
+  display: none;
+}
+
+/* === Image has no border === */
+
+div#fancy_inner {
+  background-color: transparent;
+  border: none;
+}
+
+/* === Navigation - big left and right arrows === */
+
+a#fancy_left, a#fancy_right {
+	position: fixed; 
+	display: block;
+	bottom: 0px; 
+	height: 100%; 
+	width: 35%; 
+	cursor: pointer;
+	background-image: url(data:image/gif;base64,AAAA);
+	z-index: 598; 
+}
+
+a#fancy_left {
+	left: 0px; 
+}
+
+a#fancy_right {
+	right: 0px; 
+}
+
+a#fancy_left:hover {
+	background: transparent url(fancy_mod_shortcat_left.gif) no-repeat 0% 50%;
+}
+
+a#fancy_right:hover {
+	background: transparent url(fancy_mod_shortcat_right.gif) no-repeat 100% 50%;
+}
+
+/* We do not use "fancy_ico.." classes */
+
+span.fancy_left_ico,
+span.fancy_right_ico,
+span.fancy_ico {
+  display: none;
+}
+
+
