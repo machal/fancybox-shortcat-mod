@@ -514,7 +514,8 @@
 
 		if (isIE) {
 			$("#fancy_inner").prepend('<iframe class="fancy_bigIframe" scrolling="no" frameborder="0"></iframe>');
-			$("#fancy_close, .fancy_bg, .fancy_title, .fancy_ico").fixPNG();
+			// disable PNG fix because of it changes CSS position in MSIE 
+      // $("#fancy_close, .fancy_bg, .fancy_title, .fancy_ico").fixPNG();
 		}
 	};
 
