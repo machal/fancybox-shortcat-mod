@@ -14,7 +14,7 @@ div#fancy_overlay {
 }
 
 * html div#fancy_overlay {
-	position: fixed;
+	position: absolute;
 	height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
 }
 
