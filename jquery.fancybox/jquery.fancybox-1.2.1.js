@@ -492,17 +492,17 @@
 
 		html += '<div id="fancy_inner">';
 
-		html += '<div id="fancy_close"></div>';
-
 		html +=  '<div id="fancy_bg"><div class="fancy_bg fancy_bg_n"></div><div class="fancy_bg fancy_bg_ne"></div><div class="fancy_bg fancy_bg_e"></div><div class="fancy_bg fancy_bg_se"></div><div class="fancy_bg fancy_bg_s"></div><div class="fancy_bg fancy_bg_sw"></div><div class="fancy_bg fancy_bg_w"></div><div class="fancy_bg fancy_bg_nw"></div></div>';
+
+		html += '<div id="fancy_content"></div>';
+		
+		html += '</div><!-- /fancy_inner -->';		
+
+		html += '<div id="fancy_close"></div>';
 
 		html +=  '<a href="javascript:;" id="fancy_left"><span class="fancy_ico" id="fancy_left_ico"></span></a><a href="javascript:;" id="fancy_right"><span class="fancy_ico" id="fancy_right_ico"></span></a>';
 
-		html += '<div id="fancy_content"></div>';
-
 		html +=  '<div id="fancy_title"></div>';
-
-		html += '</div>';
 
 		html += '</div>';
 
