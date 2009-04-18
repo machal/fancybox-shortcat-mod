@@ -1,3 +1,4 @@
+/* === Overlay === */
 
 div#fancy_overlay {
 	position:absolute;
@@ -6,13 +7,6 @@ div#fancy_overlay {
 	z-index: 30;
 	width: 100%;
 	background-color: #333;
-}
-
-/* Co to dela v ie? */
-* html div#fancy_overlay {
-	position: absolute;
-  height: auto;
-	xxxheight: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
 }
 
 /* === Loading box === */
@@ -107,11 +101,13 @@ div#fancy_bg {
 div#fancy_inner {
   background-color: transparent;
   border: none;
+  position: relative;
 }
 
 /* === Navigation - big left and right arrows === */
 
-a#fancy_left, a#fancy_right {
+a#fancy_left, 
+a#fancy_right {
 	position: fixed; 
 	display: block;
 	bottom: 0px; 
