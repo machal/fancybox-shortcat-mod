@@ -500,7 +500,7 @@
 
 		html += '</div><!-- /fancy_outer -->';
 		
-		html += '<div id="fancy_close"></div>';
+		html += '<a href="javascript:;" id="fancy_close"></a>';
 
 		html += '<a href="javascript:;" id="fancy_left"><span class="fancy_ico" id="fancy_left_ico"></span></a><a href="javascript:;" id="fancy_right"><span class="fancy_ico" id="fancy_right_ico"></span></a>';
 

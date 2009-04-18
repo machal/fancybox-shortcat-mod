@@ -43,21 +43,26 @@ div#fancy_loading div {
 
 /* === Closing cross === */
 
-div#fancy_close {
-	background: url('fancy_mod_shortcat_closebox.png') top left no-repeat;
+a#fancy_close {
+  position: fixed;
   cursor: pointer;
   display: none;
   height: 37px;
-  position: fixed;
-  position: _absolute;
   right: 22px;
   top: 24px;
   width: 37px;
   z-index: 599;
+  outline: none;
+	background: url('fancy_mod_shortcat_closebox.png') top left no-repeat;
 }
 
-div#fancy_close:hover {
-	background-position: bottom left;
+* html a#fancy_close {
+  position: absolute;  
+}
+
+
+a#fancy_close:hover {
+	background-position: bottom left;	
 }
 
 /* === Image title === */
