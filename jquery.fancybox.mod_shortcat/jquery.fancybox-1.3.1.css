@@ -155,8 +155,6 @@
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	font-family: Arial;
-	font-size: 12px;
 	z-index: 1102;
 }
 
@@ -170,7 +168,6 @@
 	padding-top: 5px;
 	color: #FFF;
 	text-align: center;
-	font-weight: bold;
 }
 
 .fancybox-title-over {
@@ -184,38 +181,29 @@
 	display: block;
 }
 
+/* Outer title content */
+
 #fancybox-title-wrap {
+	width: auto;
+	max-width: 400px;
 	display: inline-block;
+    padding: 5px 5px 4px;
+    background-color: #fff;
 }
 
-#fancybox-title-wrap span {
-	height: 32px;
-	float: left;
-}
-
-#fancybox-title-left {
-	padding-left: 15px;
-	background-image: url('fancybox.png');
-	background-position: -40px -90px;
-	background-repeat: no-repeat;
+#fancybox-title-left,
+#fancybox-title-right {
+	display: none;
 }
 
 #fancybox-title-main {
-	font-weight: bold;
-	line-height: 29px;
-	background-image: url('fancybox-x.png');
-	background-position: 0px -40px;
-	color: #FFF;
+  color: #333;
+  text-align: left;
+  display: block;
 }
 
-#fancybox-title-right {
-	padding-left: 15px;
-	background-image: url('fancybox.png');
-	background-position: -55px -90px;
-	background-repeat: no-repeat;
-}
-
-#fancybox-left, #fancybox-right {
+#fancybox-left, 
+#fancybox-right {
 	position: absolute;
 	bottom: 0px;
 	height: 100%;
@@ -280,11 +268,6 @@
 
 #fancybox-loading.fancybox-ie div	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_loading.png', sizingMethod='scale'); }
 .fancybox-ie #fancybox-close		{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_close.png', sizingMethod='scale'); }
-
-.fancybox-ie #fancybox-title-over	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_over.png', sizingMethod='scale'); zoom: 1; }
-.fancybox-ie #fancybox-title-left	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_left.png', sizingMethod='scale'); }
-.fancybox-ie #fancybox-title-main	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_main.png', sizingMethod='scale'); }
-.fancybox-ie #fancybox-title-right	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_right.png', sizingMethod='scale'); }
 
 .fancybox-ie #fancybox-left-ico		{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_nav_left.png', sizingMethod='scale'); }
 .fancybox-ie #fancybox-right-ico	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_nav_right.png', sizingMethod='scale'); }
