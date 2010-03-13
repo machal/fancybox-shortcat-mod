@@ -188,11 +188,15 @@
 /* Outer title content */
 
 #fancybox-title-wrap {
+	position: fixed;
+	left: 22px;
+	top: 24px;
 	width: auto;
 	max-width: 400px;
 	display: inline-block;
 	padding: 5px 5px 4px;
 	background-color: #fff;
+
 }
 
 #fancybox-title-left,
