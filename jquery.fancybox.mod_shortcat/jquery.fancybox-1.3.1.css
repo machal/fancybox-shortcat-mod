@@ -187,8 +187,8 @@
 	width: auto;
 	max-width: 400px;
 	display: inline-block;
-    padding: 5px 5px 4px;
-    background-color: #fff;
+	padding: 5px 5px 4px;
+	background-color: #fff;
 }
 
 #fancybox-title-left,
@@ -271,5 +271,3 @@
 
 .fancybox-ie #fancybox-left-ico		{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_nav_left.png', sizingMethod='scale'); }
 .fancybox-ie #fancybox-right-ico	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_nav_right.png', sizingMethod='scale'); }
-
-
