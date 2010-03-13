@@ -106,16 +106,19 @@
 
 #fancybox-close {
 	position: fixed;
-	top: 15px;
-	right: 15px;
-	width: 30px;
-	height: 30px;
-	background-image: url('fancybox.png');
-	background-position: -40px 0px;
+	right: 22px;
+	top: 24px;
+	width: 37px;
+	height: 37px;
+	background-image: url('fancy_close.gif');
+	background-position: top left;
 	cursor: pointer;
 	z-index: 1103;
 	display: none;
-	background-color: yellow;
+}
+
+#fancybox-close:hover {
+	background-position: bottom left;
 }
 
 #fancybox_error {
@@ -203,6 +206,8 @@
   display: block;
 }
 
+/* Left and right navigation arrows */
+
 #fancybox-left, 
 #fancybox-right {
 	position: fixed;
@@ -214,7 +219,6 @@
 	background-image: url('blank.gif');
 	z-index: 1102;
 	display: none;
-	background-color: blue;
 }
 
 #fancybox-left {
@@ -225,39 +229,39 @@
 	right: 0px;
 }
 
-#fancybox-left-ico, #fancybox-right-ico {
+#fancybox-left-ico, 
+#fancybox-right-ico {
 	position: absolute;
 	top: 50%;
 	left: -9999px;
-	width: 30px;
-	height: 30px;
-	margin-top: -15px;
+	width: 61px;
+	height: 77px;
+	margin-top: -30px;
 	cursor: pointer;
 	z-index: 1102;
 	display: block;
 }
 
 #fancybox-left-ico {
-	background-image: url('fancybox.png');
-	background-position: -40px -30px;
+	background-image: url('fancy_nav_left.gif');
 }
 
 #fancybox-right-ico {
-	background-image: url('fancybox.png');
-	background-position: -40px -60px;
+	background-image: url('fancy_nav_right.gif');
 }
 
-#fancybox-left:hover, #fancybox-right:hover {
+#fancybox-left:hover, 
+#fancybox-right:hover {
 	visibility: visible;    /* IE6 */
 }
 
 #fancybox-left:hover span {
-	left: 20px;
+	left: 0px;
 }
 
 #fancybox-right:hover span {
 	left: auto;
-	right: 20px;
+	right: 0px;
 }
 
 /* Shadows are off */
